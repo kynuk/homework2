@@ -4,21 +4,25 @@
 font-family: 'Roboto Condensed', sans-serif;
 font-size: 18px;
 background-color: rgba(51, 34, 8, 1);
-
 }
-#button { 
+
+.button { 
     height: 50px;
     width: 200px;
     background-color: rgba(197, 172, 45, 1);
-
 }
+
 a {
     color: black;
-
 }
+
 h1 {
     font-family: 'Fira Mono', monospace;
     font-size: 48px;
+}
+
+h2,h3 {
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .choise {
@@ -27,12 +31,22 @@ h1 {
     border: black solid 1px;
 }
 
+.conditions {
+    width: 250px;
+    height: 350px;
+    border: black solid 1px;
+}
+
 .reviews {
     background-color: rgba(51, 34, 8, 1);
     color: white;
 }
 
-
+.reviews-name {
+    width: 270px;
+    height: 300px;
+    border: black solid 1px;
+}
 
 footer {
     font-family: 'Roboto Condensed', sans-serif;

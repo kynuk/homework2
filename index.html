@@ -12,20 +12,20 @@
     <header id="about-us">
         <nav>
             <div class="logo"><img src="img/logo.png" alt="логотип">
-            <ul class="menu">
-                <li><a href="#about_us">Про нас</a></li>
-                <li><a href="#cars">Автопарк</a></li>
-                <li><a href="#reviews">Відгуки</a></li>
-                <li><a href="#conditions">Умови</a></li>
-                <li><a href="#contacts">Контакти</a></li>
-                <li><a href="#phone">+30987654321</a></li>
-            </ul>
+                <ul class="menu">
+                    <li><a href="#about_us">Про нас</a></li>
+                    <li><a href="#cars">Автопарк</a></li>
+                    <li><a href="#reviews">Відгуки</a></li>
+                    <li><a href="#conditions">Умови</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                    <li><a href="#phone">+30987654321</a></li>
+                </ul>
             </div>
         </nav>
         <div class="banner">
             <h1>Оренда авто преміум класу в Україні</h1>
             <p>Замов екслюзивне авто за допомогою мобільного додатку в будь якій точці країни </p>
-            <button id="button">Завантажити додаток</button>
+            <button class="button">Завантажити додаток</button>
             <img src="img/auto-mercedes-gray.png" alt="сірий мерседес">
             <img src="img/first-swing.png" alt="перша карусель">
             <p>4грн/хв 5-ть місць 50 тис. пробіг</p>
@@ -62,20 +62,20 @@
             </p>
             <p>Саме для цього,аби Вам було приємно і безпечно користуватись нашим сервісом на постійній основі,ми
                 виділили декілька умов,щоб взяти авто в оренду</p>
-            <button id="button">Завантажити додаток</button>
-            <article>
+            <button class="button">Завантажити додаток</button>
+            <article class="conditions">
                 <img src="img/first-rule.png" alt="перше правило">
                 <h3>Стаж водіння від 2-ох років</h3>
                 <p>Для того,щоб орендувати авто вам потрібно зареєструвати своє посвідчення водія у додатку
                 </p>
             </article>
-            <article>
+            <article class="conditions">
                 <img src="img/second-rule.png" alt="друге правило">
                 <h3>Тільки в межах країни</h3>
                 <P>Наші послуги працюють тільки в межах країни,нажаль за кордон на авто виїхати не можливо =)
                 </P>
             </article>
-            <article>
+            <article class="conditions">
                 <img src="img/third-rule.png" alt="третє правило">
                 <h3>Інтернет</h3>
                 <p>Для використання нашого сервісу,Вам знадобиться доступ до мережі інтернет,бронювання,оплата та вся
@@ -104,22 +104,22 @@
         </div>
         <div class="reviews">
             <h2 id="reviews">Відгуки</h2>
-            <article>
+            <article class="reviews-name">
                 <h3>Михайло,28 років</h3>
                 <p>Дуже радий,що ви є!Поки купити "Беху" можливості не має,зато взяти на прокат у Вас-саме то!Таке
                     враження,що в мене особистий величезний автопарк елітних авто :)</p>
             </article>
-            <article>
+            <article class="reviews-name">
                 <h3>Інна,32років</h3>
                 <p>Дуже подобається Ваш сервіс.Зустрічаю ВІП клієнтів тільки на Ваших авто.Зручно,що розрахунок по
                     хвилинах-це економить бютджет компанії.</p>
             </article>
-            <article>
+            <article class="reviews-name">
                 <h3>Ігор,25 років</h3>
                 <p>Народ, Ви ТОПЧИК!!Брав машину на побачення,покатав дівчину,вона в захваті,я задоволений,всі щасливі)
                 </p>
             </article>
-            <article>
+            <article class="reviews-name">
                 <h3>Марія,30 років</h3>
                 <p>Люблю Ваш сервіс.Не люблю таксі.В додатку швидко знаходжу машину поряд.Завжди чиста, свіженька,
                     приємно сідати в неї.На роботу і на шопінг їду з комфортом. </p>
@@ -136,14 +136,15 @@
                 </label>
                 <br>
                 <label>
-                    Телефон: <br><input name="user-phone" type="phone" placeholder="Телефон">
+                    Телефон: <br><input name="user-phone" type="tel" placeholder="Телефон">
                 </label>
                 <br>
-                <button id="button">Залишити заявку</button>
-        </Div>
+                <button class="button">Залишити заявку</button>
+            </form>
+        </div>
     </main>
     <footer>
-        <button id="button">Завантажити додаток</button>
+        <button class="button">Завантажити додаток</button>
         <ul class="menu">
             <li><a href="#about_us">Про нас</a></li>
             <li><a href="#cars">Автопарк</a></li>
