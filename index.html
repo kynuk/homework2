@@ -9,52 +9,68 @@
 </head>
 
 <body>
-    <header id="about-us">
-        <nav>
-            <div class="logo"><img src="img/logo.png" alt="логотип">
-                <ul class="menu">
-                    <li><a href="#about_us">Про нас</a></li>
-                    <li><a href="#cars">Автопарк</a></li>
-                    <li><a href="#reviews">Відгуки</a></li>
-                    <li><a href="#conditions">Умови</a></li>
-                    <li><a href="#contacts">Контакти</a></li>
-                    <li><a href="#phone">+30987654321</a></li>
-                </ul>
-            </div>
+    <header class="about-us">
+        <div class="container">
+            <nav class="menu">
+            <div class="logo"><img src="img/logo.png" alt="логотип"></div>
+            <ul class="menu-list">
+                <li><a href="#about_us">Про нас</a></li>
+                <li><a href="#cars">Автопарк</a></li>
+                <li><a href="#reviews">Відгуки</a></li>
+                <li><a href="#conditions">Умови</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+                <li><a href="#phone">+30987654321</a></li>
+            </ul>
         </nav>
-        <div class="banner">
-            <h1>Оренда авто преміум класу в Україні</h1>
-            <p>Замов екслюзивне авто за допомогою мобільного додатку в будь якій точці країни </p>
-            <button class="button">Завантажити додаток</button>
-            <img src="img/auto-mercedes-gray.png" alt="сірий мерседес">
-            <img src="img/first-swing.png" alt="перша карусель">
-            <p>4грн/хв 5-ть місць 50 тис. пробіг</p>
-        </div>
-        <nav>
-            <article class="choise">
-                <h3>Вибір</h3>
-                <img src="img/mini-car.svg" alt="маленька машина">
-                <p>Більше 5000 авто на Ваш вибір
-                </p>
-            </article>
-            <article class="choise">
-                <h3>Ціна</h3>
-                <img src="img/card.svg" alt="банківська картка">
-                <p>Дешевше таксі та власного авто
-                </p>
-            </article>
-            <article class="choise">
-                <h3>Зручність</h3>
-                <img src="img/map.svg" alt="міні мапа">
-                <p>Кращі авто в любій точці країни
-                </p>
-            </article>
-        </nav>
-        <div>
-            <a href="#lease-terms">Умови оренди авто</a>
-            <a href="#public-contract">Публічний договір</a>
         </div>
     </header>
+    <div class="container">
+        <section class="about">
+            <div class="about-grid">
+                <div class=grid-topleft>
+                    <h1>Оренда авто<br>преміум класу в Україні</h1>
+                    <p>Замов екслюзивне авто<br>за допомогою мобільного додатку в будь якій точці країни </p>
+                    <button class="button">Завантажити додаток</button>
+                </div>
+                <div class="grid-topright">
+                    <div class="photomerc">
+                        <img class="gray-merc" src="img/auto-mercedes-gray.png" alt="сірий мерседес">
+                    </div>
+                    <!-- <img src="img/first-swing.png" alt="перша карусель">  -->
+                    <div class="top-righttext">
+                        <p>4грн/хв</p>
+                        <p class="pd10">5-ть місць</p>
+                        <p>50 тис. пробіг</p>
+                    </div>
+                </div>
+                <div class="grid-botleft">
+                    <article class="choice">
+                        <h3>Вибір</h3>
+                        <img src="img/mini-car.svg" alt="маленька машина">
+                        <p>Більше 5000 авто на Ваш вибір
+                        </p>
+                    </article>
+                    <article class="choice">
+                        <h3>Ціна</h3>
+                        <img src="img/card.svg" alt="банківська картка">
+                        <p>Дешевше таксі та власного авто
+                        </p>
+                    </article>
+                    <article class="choice">
+                        <h3>Зручність</h3>
+                        <img src="img/map.svg" alt="міні мапа">
+                        <p>Кращі авто в любій точці країни
+                        </p>
+                    </article>
+                </div>
+                <div class="grid-botright">
+                    <a href="#lease-terms">Умови оренди авто</a>
+                    <a href="#public-contract">Публічний договір</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--<nav> 
     <main>
         <div class="conditionsList">
             <h2 id="conditions">Умови оренди авто</h2>
