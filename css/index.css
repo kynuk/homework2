@@ -47,7 +47,6 @@ header .logo {
 .about-grid {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-columns: repeat(2,1fr);
 }
 
 a {
@@ -59,7 +58,7 @@ a {
 }
 
 .gray-merc {
-   max-width: 490px;
+   max-width: 352px;
 }
 
 @media (min-width: 480px) {
@@ -145,6 +144,8 @@ align-items: center;
     transition: color 0.7s;
     background-color: var( --accent-color);
     height: 45px;
+    width: fit-content;
+    
 }
 
 
@@ -157,7 +158,112 @@ align-items: center;
     display: grid;
     
 }
+.conditionsparagraph {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
+.our-conditions {
+    padding: 100px 0;
+    display: flex; 
+    text-align: center;
+}
+
+.conditions-left {
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: space-between;
+}
+
+.conditions-right {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+}
+
+.advantages-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages-list{
+    max-width: 33%;
+}
+
+.advantage-text {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    max-width: 33%;
+    text-align: end;
+    justify-content: space-between;
+}
+
+.advantages-ul {
+    margin-top: 10px;
+}
+ 
+.advantages-ul li {
+    margin-bottom: 10px;
+}
+
+.advantages-ul li:nth-child(1) {
+    margin-left: 30px;
+}
+
+.advantages-ul li:nth-child(2) {
+    margin-left: 20px;
+}
+
+.advantages-ul li:nth-child(3) {
+    margin-left: 10px;
+}
+
+.advantages-ul li:nth-child(5) {
+    margin-left: 10px;
+}
+
+.advantages-ul li:nth-child(6) {
+    margin-left: 20px;
+}
+
+.advantages-ul li:nth-child(7) {
+    margin-left: 30px;
+}
+
+.advantages-section img {
+    max-width: 430px;
+    
+}
+
+.qustions {
+display: flex;
+}
+
+.qustions-form {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 50px;
+}
+
+.qustions-img img{
+    max-width: 430px;
+}
+
+.qustions-img {
+    padding: 100px 0;
+    justify-content: center;
+}
+
+.qustions-form p {
+    padding-bottom: 25px;
+}
+
+.qustions-form button {
+    margin: 20px 0;
+}
 h1 {
     font-family: 'Fira Mono', monospace;
     font-size: 25px;
@@ -175,9 +281,17 @@ h2,h3 {
 }
 
 .conditions {
-    width: 250px;
-    height: 350px;
+    
+    padding: 20px;
     border: black solid 1px;
+}
+
+.conditions img {
+    padding-bottom: 10px;
+}
+
+.conditions h3 {
+    padding: 10px;
 }
 
 .reviews {
