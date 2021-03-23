@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rentcar</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/carousel.css">
 </head>
 
 <body>
@@ -25,6 +27,13 @@
         </div>
     </header>
     <main>
+        <div class="clock">
+            <div class="clock-face">
+                <div class="hand hour-hand"></div>
+                <div class="hand min-hand"></div>
+                <div class="hand second-hand"></div>
+            </div>
+        </div>
         <div class="container">
             <section class="about">
                 <div class="about-grid">
@@ -132,6 +141,15 @@
                     <button class="button">Подивитись призентацію</button>
                 </div>
             </section>
+            <div class="products-carousel">
+                <div class="images">
+                    <img class="image1" src="" alt="Carousel image">
+                    <img class="image2" src="" alt="Carousel image">
+                    <img class="image3" src="" alt="Carousel image">
+                </div>
+                <button class="button-prev">Previous</button>
+                <button class="button-next">Next</button>
+            </div>
             <!--
             <div class="reviews">
                 <h2 id="reviews">Відгуки</h2>
@@ -202,6 +220,8 @@
             </div>
         </section>
     </footer>
+    <script src="js/clock.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 
 

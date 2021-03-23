@@ -1,0 +1,33 @@
+.products-carousel .images {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-carousel .images img {
+    width: 31%;
+}
+
+.button-prev {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    border-radius: 0.12em;
+    color: white;
+    text-align: center;
+    transition: color 0.7s;
+    background-color: var( --accent-color);
+    height: 45px;
+    width: fit-content;
+}
+
+.button-next {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    border-radius: 0.12em;
+    color: white;
+    text-align: center;
+    transition: color 0.7s;
+    background-color: var( --accent-color);
+    height: 45px;
+    width: fit-content;
+}
