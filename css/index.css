@@ -62,25 +62,22 @@ a {
    max-width: 352px;
 }
 
-@media (min-width: 480px) {
-
-    header nav {
+header nav {
         display: flex;
     }
 
-    header .menu-list a {
+header .menu-list a {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    }
+}
 
-    header .menu-list {
-        display: flex;
-        justify-content: space-evenly;
-        flex: 1;
-        align-items: center;
-        flex-direction: row;
-    }
+header .menu-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    align-items: center;
+    flex-direction: row;
 }
 
 .grid-topleft {
@@ -161,7 +158,7 @@ a {
     display: grid;
 }
 
-.conditionsparagraph {
+.conditions-paragraph {
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -339,4 +336,69 @@ footer {
     text-transform: uppercase;
 }
 
+@media (max-width: 480px) {
+.body {
+    max-width: 100%;
+    justify-content: center;
+}
 
+ .about-grid {
+     display: grid;
+     grid-template-columns: auto;
+}
+
+.choice {
+    width: 134px;
+}
+
+#conditions {
+    text-align: center;
+}
+
+.conditions-paragraph {
+    text-align: center;
+}
+
+.second-conditions-paragraph {
+    text-align: center;
+}
+
+.conditions-left .button {
+    margin: 10px 0 10px 130px;
+
+}
+
+.our-conditions {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px 0;
+}
+
+.conditions {
+    width: 134px;
+}
+
+.conditions-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+ .advantages-section {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+ }
+
+ #advantages {
+   
+}
+
+.advantages-list {
+    text-align: center;
+    max-width: fit-content;
+    align-content: center;
+    padding: 60px;
+}
