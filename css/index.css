@@ -247,8 +247,8 @@ display: flex;
     padding: 150px 50px;
 }
 
-.qustions-img img{
-    max-width: 430px;
+.qustions-img img {
+    max-width: 425px;
 }
 
 .qustions-img {
@@ -342,6 +342,10 @@ footer {
     justify-content: center;
 }
 
+.container {
+    max-width: 425px;
+    margin: 0 auto;
+}
  .about-grid {
      display: grid;
      grid-template-columns: auto;
@@ -390,15 +394,48 @@ footer {
     grid-template-columns: auto;
     justify-content: center;
     text-align: center;
+    align-items: center;
  }
-
- #advantages {
-   
-}
 
 .advantages-list {
     text-align: center;
     max-width: fit-content;
     align-content: center;
     padding: 60px;
+}
+
+.qustions {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.qustions-img img {
+    width: 425px;
+    padding: 0;
+}
+
+.advantages-image img {
+    width: 425px;
+}
+
+.advantage-text {
+    display: contents;
+    flex-direction: column;
+    text-align: center;
+    width: 33%;
+}
+
+.advantage-text .button {
+    margin: 10px 0 10px 130px;
+}
+
+.button-carousel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qustions-form {
+    padding: 50px;
 }
