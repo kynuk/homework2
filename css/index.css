@@ -26,6 +26,10 @@
     list-style-type: none;
 }
 
+header input:checked ~ .menu-list {
+    display: block;
+} 
+
 .menu-list a {
     text-transform: uppercase;
     color: white;
@@ -36,14 +40,32 @@
     font-weight: bold;
 }
 
+.menu-list {
+    display: none;
+}
+
+.burger-icon {
+    color: white;
+    font-size: 2.7em;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
 .about-us {
     background-color: var(--main-color);
 }
 
 @media (min-width: 810px) {
     .menu {
-        display: flex;
+        display: flex!important;
     }
+    
+    header .burger-icon {
+        display: none;
+    }
+
     .menu-list {
         display: flex;
         justify-content: space-around;
