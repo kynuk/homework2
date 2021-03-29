@@ -18,40 +18,67 @@
     margin: 0 auto;
 }
 
-header {
-    display: block;
+.logo {
+    align-items: flex-start;
+}
+
+.menu-list li {
+    list-style-type: none;
+}
+
+.menu-list a {
+    text-transform: uppercase;
+    color: white;
+    padding: 3px;
+}
+
+.menu-list a:hover {
+    font-weight: bold;
 }
 
 .about-us {
     background-color: var(--main-color);
 }
 
-header input:checked ~ .menu-list {
-    display: flex;
+@media (min-width: 810px) {
+    .menu {
+        display: flex;
+    }
+    .menu-list {
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+        align-items: center;
+    }
 }
 
-header .menu-list {
-    flex-direction: column;
-    background-color: var(--main-color);
+@media (max-width: 810px) {
+    .footer-list {
+        display: none!important;
+    }
+}
+
+.button {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    border-radius: 0.12em;
     color: white;
-    list-style-type: none;
+    text-align: center;
+    transition: color 0.7s;
+    background-color: var( --accent-color);
+    height: 45px;
+    width: fit-content;
 }
 
-header .menu-list a:hover {
-    font-weight: bold;
+.button:hover {
+    color: #000000;
+    background-color: rgb(119, 95, 29);
+    cursor: pointer;
 }
 
-header .logo {
-    flex-direction: column;
-    background-color: var(--main-color);
-}
-.about-grid {
+ .about-grid {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-}
-
-a {
-    color: white;
 }
 
 .photomerc {
@@ -60,24 +87,6 @@ a {
 
 .gray-merc {
    max-width: 352px;
-}
-
-header nav {
-        display: flex;
-    }
-
-header .menu-list a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-}
-
-header .menu-list {
-    display: flex;
-    justify-content: space-evenly;
-    flex: 1;
-    align-items: center;
-    flex-direction: row;
 }
 
 .grid-topleft {
@@ -136,24 +145,6 @@ header .menu-list {
     color: #000;
 }
 
-.button {
-    padding: 0.35em 1.2em;
-    border: 0.1em solid #FFFFFF;
-    border-radius: 0.12em;
-    color: white;
-    text-align: center;
-    transition: color 0.7s;
-    background-color: var( --accent-color);
-    height: 45px;
-    width: fit-content;
-}
-
-.button:hover {
-    color: #000000;
-    background-color: rgb(119, 95, 29);
-    cursor: pointer;
-}
-
 .leftside-banner {
     display: grid;
 }
@@ -206,6 +197,7 @@ header .menu-list {
 }
  
 .advantages-ul li {
+    list-style-type: none;
     margin-bottom: 10px;
 }
 
@@ -331,10 +323,29 @@ footer {
     text-transform: uppercase;
 }
 
-.footer-list a {
-    text-decoration: none;
-    text-transform: uppercase;
+
+.footer-list li {
+    list-style-type: none;
 }
+
+.footer-bot {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-list a {
+    text-transform: uppercase;
+    color: white;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.footer-list a:hover {
+    font-weight: bold;
+}
+
 
 @media (max-width: 480px) {
 .body {
